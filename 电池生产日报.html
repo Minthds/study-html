@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光伏电池生产日报</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #f5f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .status-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .normal {
+            background-color: #4CAF50;
+        }
+        .warning {
+            background-color: #FFC107;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .trend-box {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .chart-placeholder {
+            background-color: #e9e9e9;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .event-log {
+            background-color: #fff8e1;
+            padding: 15px;
+            border-left: 4px solid #FFC107;
+            margin: 20px 0;
+        }
+        .notes {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196F3;
+            font-style: italic;
+        }
+        .attachments a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #2196F3;
+            text-decoration: none;
+        }
+        .attachments a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>光伏电池生产日报</h1>
+        <p>
+            <strong>📅 日期</strong>：2024年5月15日<br>
+            <strong>🏭 产线</strong>：PERC-3号生产线<br>
+            <strong>📊 生产状态</strong>：<span class="status-dot normal"></span> 正常运行
+        </p>
+    </div>
+
+    <h2>📌 关键指标</h2>
+    <table>
+        <tr>
+            <th>指标</th>
+            <th>今日值</th>
+            <th>目标值</th>
+            <th>状态</th>
+        </tr>
+        <tr>
+            <td>日产能</td>
+            <td>52,300片</td>
+            <td>50,000片</td>
+            <td>✅ <strong>达标</strong></td>
+        </tr>
+        <tr>
+            <td>平均效率</td>
+            <td>23.15%</td>
+            <td>23.00%</td>
+            <td>▲ <strong style="color: #4CAF50;">+0.15%</strong></td>
+        </tr>
+        <tr>
+            <td>良率</td>
+            <td>98.2%</td>
+            <td>97.5%</td>
+            <td>✅ <strong>达标</strong></td>
+        </tr>
+        <tr>
+            <td>碎片率</td>
+            <td>0.3%</td>
+            <td>≤0.5%</td>
+            <td>⚠️ <strong>需关注</strong></td>
+        </tr>
+    </table>
+
+    <h2>📉 趋势分析</h2>
+    <div class="trend-box">
+        <h3>1. 效率分布（今日 vs 昨日）</h3>
+        <div class="chart-placeholder">
+            [效率分布趋势图]
+        </div>
+        <ul>
+            <li><strong>A品率</strong>：95.6%（<span style="color: #4CAF50;">↑1.2%</span>）</li>
+            <li><strong>B品率</strong>：3.8%（<span style="color: #f44336;">↓0.9%</span>）</li>
+        </ul>
+        
+        <h3>2. 缺陷类型TOP3</h3>
+        <ol>
+            <li>隐裂（0.7%）</li>
+            <li>断栅（0.4%）</li>
+            <li>污染点（0.2%）</li>
+        </ol>
+    </div>
+
+    <h2>🔧 异常事件</h2>
+    <div class="event-log">
+        <p><strong>10:15</strong>：PECVD设备短暂报警（已复位，影响产能200片）</p>
+        <p><strong>14:30</strong>：IV测试仪校准偏差±0.8%（已调整）</p>
+    </div>
+
+    <h2>📝 备注</h2>
+    <div class="notes">
+        <p>今日效率提升主要因优化了烧结温度曲线（峰值温度↓5℃），明日计划：</p>
+        <ol>
+            <li>检查丝网印刷网版磨损情况</li>
+            <li>对EL检测机进行预防性维护</li>
+        </ol>
+    </div>
+
+    <h2>📎 附件</h2>
+    <div class="attachments">
+        <a href="#">📄 完整检测数据表</a>
+        <a href="#">📊 生产趋势PPT</a>
+    </div>
+</body>
+</html>
